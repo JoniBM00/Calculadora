@@ -13,23 +13,19 @@ public class Calculadora {
 	static Logger logger = Logger.getLogger(Calculadora.class.getName());
 
 	public static double pedirDoble(String mens) throws InputMismatchException {
-		double num;
 		Scanner teclado = new Scanner(System.in);
 
 		logger.info(mens);
-		num = teclado.nextDouble();
 
-		return num;
+		return teclado.nextDouble();
 	}
 
 	public static int pedirNum(String mens) throws InputMismatchException {
-		int num;
 		Scanner teclado = new Scanner(System.in);
 
 		logger.info(mens);
-		num = teclado.nextInt();
 
-		return num;
+		return teclado.nextInt();
 	}
 
 	public static void main(String[] args) {
