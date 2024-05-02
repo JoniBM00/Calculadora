@@ -1,17 +1,28 @@
 package com.viewnext;
 
+import java.util.logging.Logger;
+
 public class Menus {
 
+	private Menus() {
+		
+	}
+	
+	static Logger logger = Logger.getLogger(Menus.class.getName());
+	
+	/**
+	 * Method to show the menu 
+	 */
 	public static void mostrarMenuPrincipal() {
 		
-		System.out.println("------------------");
-		System.out.println("-------Menu-------");
-		System.out.println("------------------");
-		System.out.println("1- Sumar.");
-		System.out.println("2- Restar.");
-		System.out.println("3- Multiplicar.");
-		System.out.println("4- Dividir.");
-		System.out.println("5- Salir.");
+		logger.info("------------------");
+		logger.info("-------Menu-------");
+		logger.info("------------------");
+		logger.info("1- Sumar.");
+		logger.info("2- Restar.");
+		logger.info("3- Multiplicar.");
+		logger.info("4- Dividir.");
+		logger.info("5- Salir.");
 	}
 	
 }
